@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="h1">LinkedIn connection Form</h1>
+    <form
+      action="mailto:leo.valdez.2428@gmail.com"
+      method="POST"
+      enctype="text/plain"
+    >
+      <div class="content">
+        <div>
+          <label for="name">Your Name:</label>
+          <input
+            type="name"
+            name="name"
+            id="name"
+            placeholder="Type your name here"
+            maxlength="100"
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="name">Email ID  :</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Type your Email ID here"
+            maxlength="50"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="username">Username :</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Type your Username here"
+            maxlength="100"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="linkedin">Are you in LinkedIn:</label>
+          <input type="radio" name="linkedin ?" value="yes" />Yes
+          <input type="radio" name="answer" value="no" />No
+        </div>
+        <br />
+        <div id="lkd">
+          <input type="checkbox" name="interest" value="yes" /> I like to create
+          a connection with you on LinkedIn.
+        </div>
+        <br />
+        <div>
+          <button type="reset">Reset</button>
+          <input type="submit" id="submit" value="Send" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
